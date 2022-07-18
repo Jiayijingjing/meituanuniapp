@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.positions.data-v-8b3e5b4a {
+  height: 30rpx;
+  line-height: 30rpx;
+  display: flex;
+  flex-direction: row;
+  padding-left: 16rpx;
+  padding-bottom: 30rpx;
+  background-color: #ffa850;
+}
+.positions .posiimg.data-v-8b3e5b4a {
+  width: 30rpx;
+  height: 30rpx;
+  padding-right: 30rpx;
+}
+.positions .add.data-v-8b3e5b4a {
+  height: 30rpx;
+  line-height: 30rpx;
+  padding-bottom: 30rpx;
+}
+.searchs.data-v-8b3e5b4a {
+  width: 100%;
+  padding-left: 18rpx;
+  padding-right: 18rpx;
+  box-sizing: border-box;
+  padding-bottom: 20rpx;
+  background-color: #ffa850;
+}
+.searchs .sear.data-v-8b3e5b4a {
+  background-color: #fafafa;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.searchs .sear .mainsearch.data-v-8b3e5b4a {
+  width: 640rpx;
+  line-height: 58rpx;
+  height: 58rpx;
+  color: #666666;
+  font-size: 26rpx;
+}
+.searchs .sear .searchimg.data-v-8b3e5b4a {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 18rpx;
+}
+.swiper.data-v-8b3e5b4a {
+  height: 360rpx;
+  padding-top: 14rpx;
+}
+.swiper-item.data-v-8b3e5b4a {
+  display: block;
+  height: 340rpx;
+  text-align: center;
+  width: 750rpx;
+}
+.swiper-item .scrollone.data-v-8b3e5b4a {
+  width: 750rpx;
+  height: 340rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.swiper-item .scrollone .scrollitems.data-v-8b3e5b4a {
+  width: 150rpx;
+  font-size: 28rpx;
+  box-sizing: border-box;
+}
+.swiper-item .scrollone .scrollitems .scrlimg.data-v-8b3e5b4a {
+  width: 90rpx;
+  height: 90rpx;
+}
+.swiper-item .scrollone .scrollitems .one_text.data-v-8b3e5b4a {
+  line-height: 40rpx;
+}
+.swiper-list.data-v-8b3e5b4a {
+  margin-top: 40rpx;
+  margin-bottom: 0;
+}
+.uni-common-mt.data-v-8b3e5b4a {
+  margin-top: 60rpx;
+  position: relative;
+}
+.info.data-v-8b3e5b4a {
+  position: absolute;
+  right: 20rpx;
+}
+.uni-padding-wrap.data-v-8b3e5b4a {
+  width: 550rpx;
+  padding: 0 100rpx;
+}
+

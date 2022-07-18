@@ -1,0 +1,203 @@
+.flex {
+	display: -webkit-box;  /* 老版本语法: Safari 3.1-6,  iOS 6-, Android browser, older WebKit browsers.  */
+	display: -moz-box;    /* 老版本语法: Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+	display: -webkit-flex;  /* 新版本语法： Chrome 21+ */
+	display: flex;       /* 新版本语法： Opera 12.1, Firefox 22+ */
+}
+.flex-v {
+ 	/***兼容性写法***/
+  -moz-box-orient:vertical; /* Firefox */
+  -webkit-box-orient:vertical; /* Safari、Opera 以及 Chrome */
+  box-orient:vertical;
+	-ms-flex-direction: column;
+  -webkit-flex-direction: column; /* Safari */
+  flex-direction: column;
+}
+.flex-align-center {
+  /*老版本语法*/
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  /*混合版本语法*/
+  -ms-flex-align: center;
+  /*新版本语法*/
+  -webkit-align-items: center; /* Safari */
+  align-items: center;
+}
+.flex-align-start {
+ 	/*老版本语法*/
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  /*混合版本语法*/
+  -ms-flex-align: start;
+  /*新版本语法*/
+  -webkit-align-items: flex-start; /* Safari */
+  align-items: flex-start;
+}
+.flex-align-end {
+	 /*老版本语法*/
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  /*混合版本语法*/
+  -ms-flex-align: end;
+  /*新版本语法*/
+  -webkit-align-items: flex-end; /* Safari */
+  align-items: flex-end;
+}
+.flex-pack-center {
+  /*老版本语法*/
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  /*混合版本语法*/
+  -ms-flex-pack: center;
+  /*新版本语法*/
+  -webkit-justify-content: center; /* Safari */
+  justify-content: center;   
+}
+.flex-pack-justify {
+  /*老版本语法*/
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	/*混合版本语法*/
+	-ms-flex-pack: justify;
+	/*新版本语法*/
+	-webkit-justify-content: space-between; /* Safari */
+	justify-content: space-between;
+}
+.flex-pack-distribute {
+  /*混合版本语法*/
+  -ms-flex-pack: distribute;
+  /*新版本语法*/
+  -webkit-justify-content: space-around; /* Safari */
+  justify-content: space-around;
+}
+.flex-pack-start {
+	/*老版本语法*/
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  /*混合版本语法*/
+  -ms-flex-pack: start;
+  /*新版本语法*/
+  -webkit-justify-content: flex-start; /* Safari */
+  justify-content: flex-start;
+}
+.flex-pack-end {
+	/*老版本语法*/
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  /*混合版本语法*/
+  -ms-flex-pack: end;
+  /*新版本语法*/
+  -webkit-justify-content: flex-end; /* Safari */
+  justify-content: flex-end;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	min-width: (最小宽度);
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	min-width: (最小宽度);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+<body ondragstart="return false">
+.flex {
+	display: -webkit-box;  /* 老版本语法: Safari 3.1-6,  iOS 6-, Android browser, older WebKit browsers.  */
+	display: -moz-box;    /* 老版本语法: Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+	display: -webkit-flex;  /* 新版本语法： Chrome 21+ */
+	display: flex;       /* 新版本语法： Opera 12.1, Firefox 22+ */
+}
+.flex-v {
+ 	/***兼容性写法***/
+  -moz-box-orient:vertical; /* Firefox */
+  -webkit-box-orient:vertical; /* Safari、Opera 以及 Chrome */
+  box-orient:vertical;
+	-ms-flex-direction: column;
+  -webkit-flex-direction: column; /* Safari */
+  flex-direction: column;
+}
+.flex-align-center {
+  /*老版本语法*/
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  /*混合版本语法*/
+  -ms-flex-align: center;
+  /*新版本语法*/
+  -webkit-align-items: center; /* Safari */
+  align-items: center;
+}
+.flex-align-start {
+ 	/*老版本语法*/
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  /*混合版本语法*/
+  -ms-flex-align: start;
+  /*新版本语法*/
+  -webkit-align-items: flex-start; /* Safari */
+  align-items: flex-start;
+}
+.flex-align-end {
+	 /*老版本语法*/
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  /*混合版本语法*/
+  -ms-flex-align: end;
+  /*新版本语法*/
+  -webkit-align-items: flex-end; /* Safari */
+  align-items: flex-end;
+}
+.flex-pack-center {
+  /*老版本语法*/
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  /*混合版本语法*/
+  -ms-flex-pack: center;
+  /*新版本语法*/
+  -webkit-justify-content: center; /* Safari */
+  justify-content: center;   
+}
+.flex-pack-justify {
+  /*老版本语法*/
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	/*混合版本语法*/
+	-ms-flex-pack: justify;
+	/*新版本语法*/
+	-webkit-justify-content: space-between; /* Safari */
+	justify-content: space-between;
+}
+.flex-pack-distribute {
+  /*混合版本语法*/
+  -ms-flex-pack: distribute;
+  /*新版本语法*/
+  -webkit-justify-content: space-around; /* Safari */
+  justify-content: space-around;
+}
+.flex-pack-start {
+	/*老版本语法*/
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  /*混合版本语法*/
+  -ms-flex-pack: start;
+  /*新版本语法*/
+  -webkit-justify-content: flex-start; /* Safari */
+  justify-content: flex-start;
+}
+.flex-pack-end {
+	/*老版本语法*/
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  /*混合版本语法*/
+  -ms-flex-pack: end;
+  /*新版本语法*/
+  -webkit-justify-content: flex-end; /* Safari */
+  justify-content: flex-end;
+}

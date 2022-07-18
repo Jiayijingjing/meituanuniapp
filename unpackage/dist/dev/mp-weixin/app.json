@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/oder/oder"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "美团外卖",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#ffbd82"
+  },
+  "tabBar": {
+    "color": "#999794",
+    "selectedColor": "#33312e",
+    "borderStyle": "white",
+    "backgroundColor": "#fafafa",
+    "list": [
+      {
+        "iconPath": "static/house.png",
+        "selectedIconPath": "static/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "static/shops.png",
+        "selectedIconPath": "static/shophei.png",
+        "pagePath": "pages/oder/oder",
+        "text": "订单"
+      },
+      {
+        "iconPath": "static/me.png",
+        "selectedIconPath": "static/medark.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

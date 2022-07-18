@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "美团外卖",
+  "navigationBarBackgroundColor": "#ffa850",
+  "usingComponents": {
+    "search": "/pages/index/components/search",
+    "preference": "/pages/index/components/preference",
+    "near": "/pages/index/components/near",
+    "shoose": "/pages/index/components/shoose",
+    "main": "/pages/index/components/main",
+    "shaixuan": "/pages/index/components/shaixuan",
+    "xitopinput": "/pages/index/components/xitopsearch",
+    "xitopselect": "/pages/index/components/xitopselect"
+  }
+}

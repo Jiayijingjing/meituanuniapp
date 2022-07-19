@@ -93,11 +93,13 @@
 		},
 		methods: {
 			godeli(){
-				this.shows = true;
+				
 				uni.pageScrollTo({
 				    scrollTop: this.menutop,
 				    duration: 0
 				});
+				this.shows = true;
+				this.tapshow = true;
 			},
 			disabledScroll(){
 				return;
@@ -235,18 +237,22 @@
 			flex-direction: row;
 			view{
 				width: 372rpx;
-				height: 50rpx;
-				line-height: 50rpx;
+				height: 60rpx;
+				line-height: 60rpx;
 				border: 1px solid #ccc;
 				text-align: center;
+				
 			}
 		}
+	}
+	.finishs{
+		background-color: #ffa850;
 	}
 	#meng{
 		width: 750rpx;
 	
-		background-color: black;
-		opacity: 0.5;
+		background-color:#000000;
+		opacity: 0.2;
 		z-index: 999999;
 	}
 </style>

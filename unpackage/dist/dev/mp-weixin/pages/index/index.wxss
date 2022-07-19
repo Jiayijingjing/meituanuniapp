@@ -107,15 +107,18 @@
 }
 .selectmain .buttons view.data-v-57280228 {
   width: 372rpx;
-  height: 50rpx;
-  line-height: 50rpx;
+  height: 60rpx;
+  line-height: 60rpx;
   border: 1px solid #ccc;
   text-align: center;
 }
+.finishs.data-v-57280228 {
+  background-color: #ffa850;
+}
 #meng.data-v-57280228 {
   width: 750rpx;
-  background-color: black;
-  opacity: 0.5;
+  background-color: #000000;
+  opacity: 0.2;
   z-index: 999999;
 }
 

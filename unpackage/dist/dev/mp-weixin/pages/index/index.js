@@ -234,11 +234,13 @@ __webpack_require__.r(__webpack_exports__);
 
   methods: {
     godeli: function godeli() {
-      this.shows = true;
+
       uni.pageScrollTo({
         scrollTop: this.menutop,
         duration: 0 });
 
+      this.shows = true;
+      this.tapshow = true;
     },
     disabledScroll: function disabledScroll() {
       return;

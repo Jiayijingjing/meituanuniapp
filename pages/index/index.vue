@@ -16,12 +16,39 @@
 					<view class="shaixuan" @tap="backsearch">筛选</view>
 				</view>
 				<view class="selectmain" @touchmove.stop.prevent="disabledScroll" v-if="tapshow">
+					<scroll-view  scroll-y="true" class="scroll-Y">
+						<view id="demo1" class="scroll-view-item">A</view>
+						<view id="demo2" class="scroll-view-item">B</view>
+						<view id="demo3" class="scroll-view-item">C</view>
+						<view id="demo4" class="scroll-view-item">A</view>
+						<view id="demo5" class="scroll-view-item">B</view>
+						<view id="demo6" class="scroll-view-item">C</view>
+						<view id="demo7" class="scroll-view-item">A</view>
+						<view id="demo8" class="scroll-view-item">B</view>
+						<view id="demo9" class="scroll-view-item">C</view>
+						<view id="demo10" class="scroll-view-item">A</view>
+						<view id="demo11" class="scroll-view-item">B</view>
+						<view id="demo12" class="scroll-view-item">C</view>
+						<view id="demo1" class="scroll-view-item">A</view>
+						<view id="demo2" class="scroll-view-item">B</view>
+						<view id="demo3" class="scroll-view-item">C</view>
+						<view id="demo4" class="scroll-view-item">A</view>
+						<view id="demo5" class="scroll-view-item">B</view>
+						<view id="demo6" class="scroll-view-item">C</view>
+						<view id="demo7" class="scroll-view-item">A</view>
+						<view id="demo8" class="scroll-view-item">B</view>
+						<view id="demo9" class="scroll-view-item">C</view>
+						<view id="demo10" class="scroll-view-item">A</view>
+						<view id="demo11" class="scroll-view-item">B</view>
+						<view id="demo12" class="scroll-view-item">C</view>
+					</scroll-view>
 					<view class="buttons">
 						<view class="clears" @tap="golist">清空</view>
 						<view class="finishs" @tap="golist">完成</view>
 					</view>
 				</view>
-				<view id="meng" :style="{height:mengheight+'px'}" v-if="tapshow" @touchmove.stop.prevent="disabledScroll" @tap="backmeng"></view>
+				<view id="meng" :style="{height:mengheight+'px'}" v-if="tapshow" @touchmove.stop.prevent="disabledScroll" @tap="backmeng">
+				</view>
 			</view>
 		</transition>
 		<Search></Search>
@@ -52,6 +79,12 @@
 				shows:false,
 				tapshow:false
 			}
+		},
+		onShow(){
+			uni.pageScrollTo({
+			    scrollTop: 0,
+			    duration: 0
+			});
 		},
 		mounted () {
 			uni.pageScrollTo({
@@ -92,10 +125,10 @@
 			zhiding(){
 				
 				if(this.newtops > this.menutop-8){
-					console.log('111')
+					
 					this.shows = true;
 				}else{
-					console.log('222')
+					
 					this.shows = false;
 				}
 			}
@@ -166,14 +199,14 @@
     .v-enter-to{
       opacity: 1  /*这个是默认值，可写可不写*/
     }
+.scroll-Y {
+	height: 624rpx;
+}
 
 .searchs{
 	    box-sizing: border-box;
 		width: 750rpx;
-		// margin-left: 18rpx;
-		// margin-right: 18rpx;
 		box-sizing: border-box;
-		// background-color: #ffa850;
 		background-color: #FFFFFF;
 		top:44px;
 		position: fixed;

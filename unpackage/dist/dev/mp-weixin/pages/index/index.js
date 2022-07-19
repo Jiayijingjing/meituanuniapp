@@ -182,6 +182,33 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
   data: function data() {
     return {
@@ -192,6 +219,12 @@ __webpack_require__.r(__webpack_exports__);
       mengheight: 0,
       shows: false,
       tapshow: false };
+
+  },
+  onShow: function onShow() {
+    uni.pageScrollTo({
+      scrollTop: 0,
+      duration: 0 });
 
   },
   mounted: function mounted() {var _this = this;
@@ -233,10 +266,10 @@ __webpack_require__.r(__webpack_exports__);
     zhiding: function zhiding() {
 
       if (this.newtops > this.menutop - 8) {
-        console.log('111');
+
         this.shows = true;
       } else {
-        console.log('222');
+
         this.shows = false;
       }
     } },

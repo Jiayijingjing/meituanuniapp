@@ -1,5 +1,5 @@
 <template>
-		<view >内容区</view>
+		<view ></view>
 </template>
 
 <script>

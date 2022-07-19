@@ -229,8 +229,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
   },
-  computed: {},
+  computed: {
+    zhiding: function zhiding() {
 
+      if (this.newtops > this.menutop - 8) {
+        console.log('111');
+        this.shows = true;
+      } else {
+        console.log('222');
+        this.shows = false;
+      }
+    } },
 
   methods: {
     godeli: function godeli() {
@@ -254,25 +263,19 @@ __webpack_require__.r(__webpack_exports__);
 
       this.tapshow = false;
       uni.pageScrollTo({
-        scrollTop: this.menutop,
+        scrollTop: this.menutop - 6,
         duration: 0 });
 
 
     },
     backmeng: function backmeng() {
       this.tapshow = false;
+
     } },
-
-
 
   onPageScroll: function onPageScroll(e) {
 
     this.newtops = e.scrollTop;
-    if (this.newtops >= this.menutop) {
-      this.shows = true;
-    } else {
-      this.shows = false;
-    }
   },
   components: {
     Search: Search,

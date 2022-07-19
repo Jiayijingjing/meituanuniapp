@@ -26,8 +26,8 @@
 		</transition>
 		<Search></Search>
 		<Preference ></Preference>
-		<Near></Near>
-		<Shaixuan id="demo" @tap.native="godeli"></Shaixuan>
+		<Near id="demo"></Near>
+		<Shaixuan  @tap.native="godeli"></Shaixuan>
 		<Shoose></Shoose>
 		<Main></Main>
 		
@@ -89,7 +89,16 @@
 			
 		},
 		computed:{
-			
+			zhiding(){
+				
+				if(this.newtops > this.menutop-8){
+					console.log('111')
+					this.shows = true;
+				}else{
+					console.log('222')
+					this.shows = false;
+				}
+			}
 		},
 		methods: {
 			godeli(){
@@ -113,25 +122,19 @@
 				
 				this.tapshow = false;
 				uni.pageScrollTo({
-				    scrollTop: this.menutop,
+				    scrollTop: this.menutop-6,
 				    duration: 0
 				});
 				
 			},
 			backmeng(){
 				this.tapshow = false;
+				
 			}
-			
-
 		},
 		onPageScroll(e) {
 				
 			this.newtops=e.scrollTop;
-			if(this.newtops >= this.menutop){
-				this.shows = true;
-			}else{
-				this.shows = false;
-			}
 		},
 		components:{
 			Search,
@@ -146,6 +149,13 @@
 </script>
 
 <style lang="scss" scoped>
+	page {
+	
+	width: 100%;
+	
+	height:auto;
+	
+	}
  /*隐藏enter  到  显示enter-to*/
     .v-enter{
       opacity: 0

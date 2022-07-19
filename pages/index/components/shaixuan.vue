@@ -43,7 +43,7 @@
 		},
 		methods: {
 			godeli(a){
-				
+				this.$emit('godeli');
 			}
 		}
 	}

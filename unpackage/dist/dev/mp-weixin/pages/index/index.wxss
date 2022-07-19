@@ -35,11 +35,10 @@
   opacity: 1;
 }
 .searchs.data-v-57280228 {
-  width: 100%;
-  padding-left: 18rpx;
-  padding-right: 18rpx;
   box-sizing: border-box;
-  background-color: #ffa850;
+  width: 750rpx;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
   top: 44px;
   position: fixed;
   top: 0;
@@ -47,12 +46,15 @@
   z-index: 999999;
 }
 .searchs .sear.data-v-57280228 {
-  background-color: #fafafa;
+  background-color: #dfdfdf;
   border-radius: 10rpx;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-left: 18rpx;
+  margin-right: 18rpx;
+  margin-top: 18rpx;
 }
 .searchs .sear .mainsearch.data-v-57280228 {
   width: 640rpx;
@@ -85,5 +87,35 @@
 .neartitle .shaixuan.data-v-57280228 {
   line-height: 72rpx;
   padding-right: 24rpx;
+}
+.selectmain.data-v-57280228 {
+  box-sizing: border-box;
+  width: 750rpx;
+  height: 700rpx;
+  background-color: white;
+  z-index: 999999;
+  position: relative;
+  padding-left: 16rpx;
+  padding-right: 16rpx;
+}
+.selectmain .buttons.data-v-57280228 {
+  bottom: 0;
+  left: 0;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+}
+.selectmain .buttons view.data-v-57280228 {
+  width: 372rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+#meng.data-v-57280228 {
+  width: 750rpx;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 999999;
 }
 

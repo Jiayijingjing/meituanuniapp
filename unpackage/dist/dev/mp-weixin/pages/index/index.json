@@ -7,8 +7,6 @@
     "near": "/pages/index/components/near",
     "shoose": "/pages/index/components/shoose",
     "main": "/pages/index/components/main",
-    "shaixuan": "/pages/index/components/shaixuan",
-    "xitopinput": "/pages/index/components/xitopsearch",
-    "xitopselect": "/pages/index/components/xitopselect"
+    "shaixuan": "/pages/index/components/shaixuan"
   }
 }

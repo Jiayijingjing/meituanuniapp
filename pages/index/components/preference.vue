@@ -34,11 +34,28 @@
 			</view>
 			<view id="demo3" class="scroll-view-item_H">
 				<view class="items">
+					<image src="../../../static/oil.jpg" class="pre_img"></image>
+					<view class="pretext">高山茶叶</view>
+				</view>
+			</view>
+			<view id="demo3" class="scroll-view-item_H">
+				<view class="items">
+					<image src="../../../static/tea02.jpg" class="pre_img"></image>
+					<view class="pretext">高山茶叶</view>
+				</view>
+			</view>
+			<view id="demo3" class="scroll-view-item_H">
+				<view class="items">
+					<image src="../../../static/milk.jpg" class="pre_img"></image>
+					<view class="pretext">高山茶叶</view>
+				</view>
+			</view>
+			<view id="demo3" class="scroll-view-item_H">
+				<view class="items">
 					<image src="../../../static/tea.jpg" class="pre_img"></image>
 					<view class="pretext">高山茶叶</view>
 				</view>
 			</view>
-			
 		</scroll-view>
 	</view>
 </template>

@@ -304,6 +304,12 @@ __webpack_require__.r(__webpack_exports__);
     backmeng: function backmeng() {
       this.tapshow = false;
 
+    },
+    gosearchmains: function gosearchmains() {
+      console.log('111');
+      uni.navigateTo({
+        url: '/pages/searchpage/searchpage' });
+
     } },
 
   onPageScroll: function onPageScroll(e) {

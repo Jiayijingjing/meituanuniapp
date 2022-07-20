@@ -7,8 +7,8 @@
 		</view>
 		<view class="searchs">
 			<view class="sear">
-				<image src="../../../static/fangda.png" class="searchimg"></image>
-				<input type="text" class="mainsearch" placeholder="火锅"  />
+				<image src="../../../static/fangda.png" class="searchimg" @tap="gotosearch" ></image>
+				<input type="text" class="mainsearch" placeholder="火锅" />
 			</view>
 		</view>
 		<swiper class="swiper" :indicator-dots="indicatorDots" indicator-color="#dddddd" indicator-active-color="#ffa850">
@@ -176,6 +176,10 @@
 				},
 				durationChange(e) {
 					this.duration = e.target.value
+				},
+				gotosearch(){
+					
+					this.$emit('gosearchmain');
 				}
 			}
 			
@@ -226,8 +230,8 @@
 			font-size: 26rpx;
 		}
 		.searchimg{
-			width: 30rpx;
-			height: 30rpx;
+			width: 42rpx;
+			height: 42rpx;
 			margin-left: 18rpx;
 			
 		}

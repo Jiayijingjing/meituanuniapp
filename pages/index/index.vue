@@ -51,7 +51,7 @@
 				</view>
 			</view>
 		</transition>
-		<Search></Search>
+		<Search @gosearchmain="gosearchmains"></Search>
 		<Preference ></Preference>
 		<Near id="demo"></Near>
 		<Shaixuan  @tap.native="godeli"></Shaixuan>
@@ -163,6 +163,12 @@
 			backmeng(){
 				this.tapshow = false;
 				
+			},
+			gosearchmains(){
+				console.log('111');
+				uni.navigateTo({
+					url:'/pages/searchpage/searchpage'
+				})
 			}
 		},
 		onPageScroll(e) {

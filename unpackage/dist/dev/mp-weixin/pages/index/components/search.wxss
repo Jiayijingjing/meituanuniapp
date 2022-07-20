@@ -67,8 +67,8 @@
   font-size: 26rpx;
 }
 .searchs .sear .searchimg.data-v-8b3e5b4a {
-  width: 30rpx;
-  height: 30rpx;
+  width: 42rpx;
+  height: 42rpx;
   margin-left: 18rpx;
 }
 .swiper.data-v-8b3e5b4a {

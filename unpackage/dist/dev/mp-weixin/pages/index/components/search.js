@@ -292,6 +292,10 @@ var _default =
     },
     durationChange: function durationChange(e) {
       this.duration = e.target.value;
+    },
+    gotosearch: function gotosearch() {
+
+      this.$emit('gosearchmain');
     } } };exports.default = _default;
 
 /***/ }),

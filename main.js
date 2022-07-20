@@ -3,13 +3,17 @@ import App from './App'
 // #ifndef VUE3
 import Vue from 'vue'
 //引入封装的请求
+import store from '@/store/store.js'
+Vue.prototype.$store = store;
+
 import { myHttp } from 'api/api.js'
 Vue.prototype.$myHttp = myHttp
 
 Vue.config.productionTip = false
 App.mpType = 'app'
 const app = new Vue({
-    ...App
+    ...App,
+	store
 })
 app.$mount()
 // #endif

@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "美团外卖",
-  "navigationBarBackgroundColor": "#ffa850",
+  "navigationBarBackgroundColor": "#ff902e",
   "usingComponents": {
     "search": "/pages/index/components/search",
     "preference": "/pages/index/components/preference",

@@ -31,7 +31,7 @@
   flex-direction: row;
   padding-left: 16rpx;
   padding-bottom: 30rpx;
-  background-color: #ffa850;
+  background-color: #ff902e;
 }
 .positions .posiimg.data-v-8b3e5b4a {
   width: 30rpx;
@@ -49,7 +49,7 @@
   padding-right: 18rpx;
   box-sizing: border-box;
   padding-bottom: 20rpx;
-  background-color: #ffa850;
+  background-color: #ff902e;
 }
 .searchs .sear.data-v-8b3e5b4a {
   background-color: #fafafa;

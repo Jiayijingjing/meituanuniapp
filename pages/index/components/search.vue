@@ -12,7 +12,53 @@
 			</view>
 		</view>
 		<swiper class="swiper" :indicator-dots="indicatorDots" indicator-color="#dddddd" indicator-active-color="#ffa850">
-			<swiper-item>
+			<swiper-item @tap="godetail">
+				<view class="swiper-item">
+					<view class="scrollone" >
+						<view class="scrollitems" >
+							<image src="../../../static/run.png" class="scrlimg"></image>
+							<view class="one_text">美食</view>
+						</view>
+						<view class="scrollitems">
+							<image src="../../../static/hospital.png" class="scrlimg"></image>
+							<view class="one_text">超市便利</view>
+						</view>
+						<view class="scrollitems">
+							<image src="../../../static/news.png" class="scrlimg"></image>
+							<view class="one_text">蔬菜水果</view>
+						</view>
+						<view class="scrollitems">
+							<image src="../../../static/shang.png" class="scrlimg"></image>
+							<view class="one_text">美团专送</view>
+						</view>
+						<view class="scrollitems">
+							<image src="../../../static/shop.png" class="scrlimg"></image>
+							<view class="one_text">跑腿代购</view>
+						</view>
+						<view class="scrollitems">
+							<image src="../../../static/shop.png" class="scrlimg"></image>
+							<view class="one_text">夜宵</view>
+						</view>
+						<view class="scrollitems">
+							<image src="../../../static/shang.png" class="scrlimg"></image>
+							<view class="one_text">津贴联盟</view>
+						</view>
+						<view class="scrollitems">
+							<image src="../../../static/run.png" class="scrlimg"></image>
+							<view class="one_text">甜点饮品</view>
+						</view>
+						<view class="scrollitems">
+							<image src="../../../static/hospital.png" class="scrlimg"></image>
+							<view class="one_text">龙虾烧烤</view>
+						</view>
+						<view class="scrollitems">
+							<image src="../../../static/news.png" class="scrlimg"></image>
+							<view class="one_text">甜蜜蛋糕</view>
+						</view>
+					</view>
+				</view>
+			</swiper-item>
+			<swiper-item @tap="godetail">
 				<view class="swiper-item">
 					<view class="scrollone">
 						<view class="scrollitems">
@@ -58,53 +104,7 @@
 					</view>
 				</view>
 			</swiper-item>
-			<swiper-item>
-				<view class="swiper-item">
-					<view class="scrollone">
-						<view class="scrollitems">
-							<image src="../../../static/run.png" class="scrlimg"></image>
-							<view class="one_text">美食</view>
-						</view>
-						<view class="scrollitems">
-							<image src="../../../static/hospital.png" class="scrlimg"></image>
-							<view class="one_text">超市便利</view>
-						</view>
-						<view class="scrollitems">
-							<image src="../../../static/news.png" class="scrlimg"></image>
-							<view class="one_text">蔬菜水果</view>
-						</view>
-						<view class="scrollitems">
-							<image src="../../../static/shang.png" class="scrlimg"></image>
-							<view class="one_text">美团专送</view>
-						</view>
-						<view class="scrollitems">
-							<image src="../../../static/shop.png" class="scrlimg"></image>
-							<view class="one_text">跑腿代购</view>
-						</view>
-						<view class="scrollitems">
-							<image src="../../../static/shop.png" class="scrlimg"></image>
-							<view class="one_text">夜宵</view>
-						</view>
-						<view class="scrollitems">
-							<image src="../../../static/shang.png" class="scrlimg"></image>
-							<view class="one_text">津贴联盟</view>
-						</view>
-						<view class="scrollitems">
-							<image src="../../../static/run.png" class="scrlimg"></image>
-							<view class="one_text">甜点饮品</view>
-						</view>
-						<view class="scrollitems">
-							<image src="../../../static/hospital.png" class="scrlimg"></image>
-							<view class="one_text">龙虾烧烤</view>
-						</view>
-						<view class="scrollitems">
-							<image src="../../../static/news.png" class="scrlimg"></image>
-							<view class="one_text">甜蜜蛋糕</view>
-						</view>
-					</view>
-				</view>
-			</swiper-item>
-			<swiper-item>
+			<swiper-item @tap="godetail">
 				<view class="swiper-item">
 					<view class="scrollone">
 						<view class="scrollitems">
@@ -180,6 +180,9 @@
 				gotosearch(){
 					
 					this.$emit('gosearchmain');
+				},
+				godetail(){
+					this.$emit('godetail');
 				}
 			}
 			
@@ -194,7 +197,7 @@
 	flex-direction: row;
 	padding-left: 16rpx;
 	padding-bottom: 30rpx;
-	background-color: #ffa850;
+	background-color: #ff902e;
 	.posiimg{
 		width: 30rpx;
 		height:30rpx;
@@ -213,7 +216,7 @@
 	padding-right: 18rpx;
 	box-sizing: border-box;
 	padding-bottom: 20rpx;
-	background-color: #ffa850;
+	background-color: #ff902e;
 	.sear{
 		background-color: #fafafa;
 		border-radius: 10rpx;

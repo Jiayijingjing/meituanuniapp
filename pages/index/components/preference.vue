@@ -3,55 +3,55 @@
 		<view class="title_01">为你优选</view>
 		<scroll-view class="scroll-view_H" scroll-x="true"  scroll-left="0">
 			<view id="demo1" class="scroll-view-item_H">
-				<view class="items">
+				<view class="items" @tap="godetail">
 					<image src="../../../static/tea.jpg" class="pre_img"></image>
 					<view class="pretext">高山茶叶</view>
 				</view>
 			</view>
 			<view id="demo2" class="scroll-view-item_H">
-				<view class="items">
+				<view class="items" @tap="godetail">
 					<image src="../../../static/milk.jpg" class="pre_img"></image>
 					<view class="pretext">高山茶叶高山茶叶买一送三</view>
 				</view>
 			</view>
 			<view id="demo3" class="scroll-view-item_H">
-				<view class="items">
+				<view class="items" @tap="godetail">
 					<image src="../../../static/oil.jpg" class="pre_img"></image>
 					<view class="pretext">高山茶叶高山</view>
 				</view>
 			</view>
 			<view id="demo3" class="scroll-view-item_H">
-				<view class="items">
+				<view class="items" @tap="godetail">
 					<image src="../../../static/tea02.jpg" class="pre_img"></image>
 					<view class="pretext">高山茶叶买一送三</view>
 				</view>
 			</view>
 			<view id="demo3" class="scroll-view-item_H">
-				<view class="items">
+				<view class="items" @tap="godetail">
 					<image src="../../../static/tea.jpg" class="pre_img"></image>
 					<view class="pretext">高山茶叶</view>
 				</view>
 			</view>
 			<view id="demo3" class="scroll-view-item_H">
-				<view class="items">
+				<view class="items" @tap="godetail">
 					<image src="../../../static/oil.jpg" class="pre_img"></image>
 					<view class="pretext">高山茶叶</view>
 				</view>
 			</view>
 			<view id="demo3" class="scroll-view-item_H">
-				<view class="items">
+				<view class="items" @tap="godetail">
 					<image src="../../../static/tea02.jpg" class="pre_img"></image>
 					<view class="pretext">高山茶叶</view>
 				</view>
 			</view>
 			<view id="demo3" class="scroll-view-item_H">
-				<view class="items">
+				<view class="items" @tap="godetail">
 					<image src="../../../static/milk.jpg" class="pre_img"></image>
 					<view class="pretext">高山茶叶</view>
 				</view>
 			</view>
 			<view id="demo3" class="scroll-view-item_H">
-				<view class="items">
+				<view class="items" @tap="godetail">
 					<image src="../../../static/tea.jpg" class="pre_img"></image>
 					<view class="pretext">高山茶叶</view>
 				</view>
@@ -71,7 +71,9 @@ export default {
 	
 	},
 	methods: {
-		
+		godetail(){
+			this.$emit('godetail');
+		}
 	}
 }
 </script>

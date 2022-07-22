@@ -1,7 +1,7 @@
 <template>
 		<view class="searchs">
 			<view class="sear">
-				<input type="text" class="mainsearch" placeholder="火锅"  />
+				<input type="text" class="mainsearch" placeholder="火锅" @confirm="goback" />
 				<text class="sousuo" @tap="goback">搜索</text>
 			</view>
 			<view class="title">搜索历史</view>

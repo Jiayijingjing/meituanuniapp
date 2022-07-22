@@ -1,9 +1,9 @@
 <template>
 <view class="scrolly" >
 	<view id="demo1" class="scroll-view-item ">
-		<view class="items">
+		<view class="items" @tap="godetail">
 			<image src="../../../static/aoliao.jpg" class="itemimg"></image>
-			<view class="itemtext">
+			<view class="itemtext" >
 				<view class="texta">九丰土菜馆</view>
 				<view class="textb">
 					<view class="textb_a">月销200</view>
@@ -15,23 +15,23 @@
 		</view>
 	</view>
 	<view id="demo2" class="scroll-view-item ">
-		<view class="items">
+		<view class="items" @tap="godetail">
 			<image src="../../../static/aoliao.jpg" class="itemimg"></image>
-			<view class="itemtext">
+			<view class="itemtext" >
 				<view class="texta">九丰土菜馆</view>
 				<view class="textb">
 					<view class="textb_a">月销200</view>
 					<view class="textb_b">约10分钟</view>
 				</view>
-				<view class="textc">起送￥1 配送￥1 人均￥10</view>
+				<view class="textc">起送￥1 &nbsp;配送￥1 &nbsp;人均￥10</view>
 				<view class="textd">江浙菜</view>
 			</view>
 		</view>
 	</view>
 	<view id="demo3" class="scroll-view-item ">
-		<view class="items">
+		<view class="items" @tap="godetail">
 			<image src="../../../static/aoliao.jpg" class="itemimg"></image>
-			<view class="itemtext">
+			<view class="itemtext" >
 				<view class="texta">九丰土菜馆</view>
 				<view class="textb">
 					<view class="textb_a">月销200</view>
@@ -43,9 +43,9 @@
 		</view>
 	</view>
 	<view id="demo4" class="scroll-view-item ">
-		<view class="items">
+		<view class="items" @tap="godetail">
 			<image src="../../../static/aoliao.jpg" class="itemimg"></image>
-			<view class="itemtext">
+			<view class="itemtext" >
 				<view class="texta">九丰土菜馆</view>
 				<view class="textb">
 					<view class="textb_a">月销200</view>
@@ -57,9 +57,9 @@
 		</view>
 	</view>
 	<view id="demo5" class="scroll-view-item ">
-		<view class="items">
+		<view class="items"@tap="godetail">
 			<image src="../../../static/aoliao.jpg" class="itemimg"></image>
-			<view class="itemtext">
+			<view class="itemtext" >
 				<view class="texta">九丰土菜馆</view>
 				<view class="textb">
 					<view class="textb_a">月销200</view>
@@ -71,9 +71,9 @@
 		</view>
 	</view>
 	<view id="demo6" class="scroll-view-item ">
-		<view class="items">
+		<view class="items" @tap="godetail">
 			<image src="../../../static/aoliao.jpg" class="itemimg"></image>
-			<view class="itemtext">
+			<view class="itemtext" >
 				<view class="texta">九丰土菜馆</view>
 				<view class="textb">
 					<view class="textb_a">月销200</view>
@@ -99,7 +99,9 @@ export default {
 	
 	},
 	methods:{
-		
+		godetail(){
+			this.$emit('godetail');
+		}
 	}
 	
 }

@@ -3,7 +3,7 @@
 		<transition>
 			<view class="searchs" v-show="shows" @touchmove.stop.prevent="disabledScroll">
 				<view class="sear" id="inputh" @touchmove.stop.prevent="disabledScroll">
-					<image src="../../static/fangda.png" class="searchimg"></image>
+					<image src="../../static/fangda.png" class="searchimg" @tap="gosearchmain"></image>
 					<input type="text" class="mainsearch" placeholder="火锅"  />
 				</view>
 				<view class="neartitle" id="selecth" @touchmove.stop.prevent="disabledScroll">
@@ -51,11 +51,11 @@
 				</view>
 			</view>
 		</transition>
-		<Search @gosearchmain="gosearchmains"></Search>
-		<Preference ></Preference>
+		<Search @gosearchmain="gosearchmains"  @godetail="godetail"></Search>
+		<Preference @godetail="godetail"></Preference>
 		<Near id="demo"></Near>
 		<Shaixuan  @tap.native="godeli"></Shaixuan>
-		<Shoose></Shoose>
+		<Shoose @godetail="godetail"></Shoose>
 		<Main></Main>
 		
 	</view>
@@ -115,6 +115,8 @@
 			  success: (res) =>{
 				  
 				this.setWidth = res.windowHeight ;
+				this.$store.state.clienth = res.windowHeight;
+				
 				this.mengheight = res.windowHeight-44-aa-bb;
 				
 			  }
@@ -165,9 +167,15 @@
 				
 			},
 			gosearchmains(){
-				console.log('111');
+				
 				uni.navigateTo({
 					url:'/pages/searchpage/searchpage'
+				})
+			},
+			godetail(){
+				
+				uni.navigateTo({
+					url:'/pages/details/details'
 				})
 			}
 		},
@@ -295,13 +303,14 @@
 		}
 	}
 	.finishs{
-		background-color: #ffa850;
+		background-color: #ff902e;
 	}
 	#meng{
 		width: 750rpx;
-	
-		background-color:#000000;
-		opacity: 0.2;
-		z-index: 999999;
+		background-color: black;
+		z-index: 1001;
+		-moz-opacity: 0.7;
+		opacity: 0.70;
+		filter: alpha(opacity=70);
 	}
 </style>

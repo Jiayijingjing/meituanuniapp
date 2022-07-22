@@ -3,14 +3,15 @@
     "pages/index/index",
     "pages/my/my",
     "pages/oder/oder",
-    "pages/searchpage/searchpage"
+    "pages/searchpage/searchpage",
+    "pages/details/details"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "美团外卖",
     "navigationBarBackgroundColor": "#FFFFFF",
-    "backgroundColor": "#ffbd82"
+    "backgroundColor": "#ff902e"
   },
   "tabBar": {
     "color": "#999794",

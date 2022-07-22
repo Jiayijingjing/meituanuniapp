@@ -6,9 +6,9 @@
   },
   "setting": {
     "urlCheck": false,
-    "postcss": true,
-    "es6": true,
-    "minified": true,
+    "postcss": false,
+    "es6": false,
+    "minified": false,
     "coverView": true,
     "lazyloadPlaceholderEnable": false,
     "preloadBackgroundData": false,

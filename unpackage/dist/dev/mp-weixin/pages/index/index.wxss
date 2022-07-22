@@ -120,12 +120,14 @@ page.data-v-57280228 {
   text-align: center;
 }
 .finishs.data-v-57280228 {
-  background-color: #ffa850;
+  background-color: #ff902e;
 }
 #meng.data-v-57280228 {
   width: 750rpx;
-  background-color: #000000;
-  opacity: 0.2;
-  z-index: 999999;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.7;
+  opacity: 0.70;
+  filter: alpha(opacity=70);
 }
 
